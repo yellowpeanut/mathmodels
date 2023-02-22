@@ -7,10 +7,10 @@ def find_m_sv(Tv):
     kt = 5000
     F = 10
     Ts = 90
-    tau = 2260000
+    r = 2260000
     ct = 4187
     return (kt*F*(Tv-Ts))\
-           / (tau-ct*Ts)
+           / (r-ct*Ts)
 
 def find_m_out(m_in, m_sv):
     return m_in - m_sv
@@ -80,5 +80,9 @@ axis[2].plot(Tv_s, C_outs_Tv)
 axis[2].set_title("Tv_in to C_out")
 axis[2].set_xlabel("Tv_in")
 axis[2].set_ylabel("C_out")
+
+axis[0].set_box_aspect(1)
+axis[1].set_box_aspect(1)
+axis[2].set_box_aspect(1)
 
 plt.show()
