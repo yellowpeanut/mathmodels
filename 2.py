@@ -93,6 +93,9 @@ while t <= ts[1]:
     Cs2.append(_C_out)
     t += _dt
 
+#just fork
+#just fo nikolukin
+
 # finding Tv to C_out
 _Tv = Tvs[2] + dTv
 _m_sv = find_m_sv(_Tv)
@@ -167,3 +170,4 @@ axis[1][2].set_xlabel("Tv_in")
 axis[1][2].set_ylabel("C_out")
 
 plt.show()
+
