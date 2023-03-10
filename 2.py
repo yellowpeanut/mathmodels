@@ -68,6 +68,7 @@ dC_in = 2
 dm_in = 3.5
 dTv = 5
 
+
 ts = [0, 500]
 _dt = 0.1
 
@@ -92,6 +93,9 @@ while t <= ts[1]:
     _C_out, M2 = f(C_ins[1], _C_out, _m_in, M2, Tvs[1], _dt)
     Cs2.append(_C_out)
     t += _dt
+
+#just fork
+#just fo nikolukin
 
 # finding Tv to C_out
 _Tv = Tvs[2] + dTv
@@ -167,3 +171,4 @@ axis[1][2].set_xlabel("Tv_in")
 axis[1][2].set_ylabel("C_out")
 
 plt.show()
+
